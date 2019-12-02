@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("ghpop/train-schedule")
+                    app = docker.build("ghpop11/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
